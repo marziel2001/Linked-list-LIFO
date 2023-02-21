@@ -1,0 +1,38 @@
+Lista wiązana. Każdy element listy powinien zawierać klucz key typu int (signed integer), i pewną liczbę wskaźników wymaganych w Twojej implementacji listy.
+Program powinien obsługiwać następujące operacje:
+i - wstaw nowy element na koniec listy,
+d - usuń element z końca listy i wypisz jego klucz na ekranie,
+g - pobierz element listy z podanej pozycji i wypisz jego klucz na ekranie,
+q - zwolnij pamięć alokowaną dynamicznie i zakończ działanie programu.
+Pierwszy element listy (head) jest interpretowany jako element na pozycji 0, kolejny element na pozycji 1, itd.
+
+Input
+Dowolna liczba linii, w każdej linii jedna z komend:
+i <key>
+d
+g <index>
+q
+Gdzie:
+i, d, g, q są identyfikatorami operacji,
+<index> jest pozycją elementu w liście,
+<key> jest kluczem elementu (wartość typu int przechowywana w elemencie listy).
+Możesz założyć, że q zawsze będzie ostatnią operacją. Możesz założyć, że <index> będzie zawsze liczbą z przedziału <0, size-1>.
+
+Output
+Dla każdego wystąpienia operacji g oraz d wypisywany jest klucz key pobranego (lub usuwanego) elementu. Wypisywane wartości powinny być rozdzielone znakami nowej linii (std::endl lub \n).
+
+Example/Przykład
+Input
+i 5
+i 1
+i 2
+i 3
+i 4
+d
+g 3
+g 0
+q
+Output
+4
+3
+5
